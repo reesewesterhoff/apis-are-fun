@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="angular.min.js"></script>
+    <script src="client.js"></script>
+    <title>APIs Are Fun</title>
+</head>
+<body ng-app="ApiApp" ng-controller="ApiController as vm">
+    <h1>APIs Are Fun</h1>
+    {{vm.message}}
+    <ul>
+        <li ng-repeat="ship in vm.starships">{{ship.name}}</li>
+    </ul>
+</body>
+</html>
